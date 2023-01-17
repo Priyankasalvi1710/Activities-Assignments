@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions:</h2>
+<h3>Match method()</h3>
+
+<script>
+let t = "A friend in need is a friend indeed! ";
+let p= /need/i;
+let r = t.match(p);
+document.write(r +"<br><br>");
+
+let text = "A friend in need is a friend indeed! ";
+let pattern = /e/g; 
+let result = text.match(pattern);
+document.write(result +"<br><br>");
+
+var a = `Get ready
+get set
+go`
+var b = /^get/m;
+var c = a.match(b);
+document.write(c +"<br><br>");
+</script>
+
+<h3> The Test Method()</h3>
+<p>The test() method returns true if it finds a match, otherwise false.</p>
+<script>
+let txt = "In nature, nothing is perfect and everything is perfect. Trees can be contorted, bent in weird ways, and they're still beautiful. ";
+let patt = /z/;
+let res = patt.test(txt);
+document.write(res + "<br><br>");
+
+</script>
+<h3>The replace() Method</h3>
+<script>
+x = "Hello everyone welcome to software testing class"
+document.write(x.replace("software testing", "javascript")+"<br><br>");
+</script>
+
+<script>
+	let m = "A friend in need is a friend indeed!";
+    let n = /[^e]/g;
+    let o = m.match(n);
+    document.write(o);
+</script>
+</body>
+</html>

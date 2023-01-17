@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The replace() Method</h2>
+
+<p id="demo">Real friends always share and support each other.</p>
+
+<script>
+let str = document.getElementById("demo").innerHTML; 
+let res = str.replace(/Real friends/g, "Best friends");
+document.getElementById("demo").innerHTML = res;
+</script>
+
+</body>
+</html>
